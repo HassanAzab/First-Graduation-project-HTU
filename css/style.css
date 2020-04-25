@@ -1,34 +1,36 @@
 html {
     scroll-behavior: smooth;
 }
-.back {
-    animation: changeBackground 10s infinite;
-    height: 650px;
-    background-size: cover;
-    background-attachment: fixed;
-}
 @media (max-width:700px){
     .back{
         height: 750px;
     }
 }
 @keyframes changeBackground {
-    from {
-        background-image: url(../img/pic4.jpeg);
+    0% {
+        background-image: url(../img/cake.jpg);
     }
-    to {
-        background-image: url(../img/pic6.jpeg);
+    25% {
+        background-image: url(../img/icecream.jpg);
+    }
+     50% {
+        background-image: url(../img/knafah.jpg);
+    }
+     75% {
+        background-image: url(../img/joice.jpg);
+    }
+     100% {
+        background-image: url(../img/joice1.jpg);
     }
 }
-.bg-light,
-.jumbotron-fluid {
-    background: none !important;
+.back {
+    animation: changeBackground 35s infinite;
+    background-size: cover;
+    width: 350px;
+    height: 300px;
 }
-.logo {
-    border-radius: 100%;
-}
-nav {
-    border-bottom: 2px solid white;
+.bg-light{
+    background-color: #0F1812 !important;
 }
 .pad-50 {
     padding: 50px;
@@ -42,14 +44,11 @@ nav {
     font-weight: bolder;
     display: inline-block;
 }
-.menu-button {
-    border: 2px solid white;
+a{
+text-decoration: none;
+color: white;
 }
-a {
-    text-decoration: none;
-    color: white;
-}
-a:hover {
+a:hover{
     text-decoration: none;
     color: white;
 }
@@ -57,6 +56,7 @@ a:hover {
     background-color: #0F1812 !important;
     color: white;
     margin-top: 50px;
+    padding: 20px; 
 }
 .footer {
     background-color: #0F1812 !important;
@@ -67,4 +67,49 @@ a:hover {
 }
 .color {
     font-size: 32px;
+}
+#burger,#pizza{
+    display: none;
+}
+@media(max-width:1100px){
+.pagination-lg{
+ margin: 0px 20%;
+}    
+}
+@media(max-width:700px){
+.pagination-lg{
+ margin: 0px 10% ;
+}    
+}
+@media(max-width:400px){
+.pagination-lg{
+ margin: 0px;
+}    
+}
+@media(max-width:300px){
+.pagination-lg .page-link{
+ margin: 0px;
+    
+    text-align: center;
+    padding: 10px;
+}    
+}
+li span{
+    display: inline-block;
+    float:right;
+    padding: 2px;
+}
+.li{
+    list-style: none;
+    font-weight: bolder;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 20px;
+    border-bottom: 2px solid white;
+    text-align: left;
+}
+@media (max-width:750px){
+    .back{
+        margin-left: 30px;
+    }
 }
